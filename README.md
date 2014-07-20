@@ -1,14 +1,11 @@
-# &lt;my-repo&gt;
+# x-fontawesome
 
-> A bare minimum custom element starter-kit using [Polymer](http://www.polymer-project.org/).
->
-> Like [Yeoman](http://yeoman.io/)? Use the [generator-element](https://www.npmjs.org/package/generator-element) instead.
->
-> Looking for a working example? Check [hello-world-polymer](https://github.com/webcomponents/hello-world-polymer).
+Polymer Web Component that registers Font Awesome SVGs so you can use them easily in your components.
+
 
 ## Demo
 
-[Check it live!](http://my-user.github.io/my-repo)
+[Check it live!](http://ruiramos.github.io/x-fontawesome)
 
 ## Install
 
@@ -39,24 +36,6 @@ Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
     ```html
     <my-element></my-element>
     ```
-
-## Options
-
-Attribute     | Options     | Default      | Description
----           | ---         | ---          | ---
-`foo`         | *string*    | `bar`        | Lorem ipsum dolor.
-
-## Methods
-
-Method        | Parameters   | Returns     | Description
----           | ---          | ---         | ---
-`unicorn()`   | None.        | Nothing.    | Magic stuff appears.
-
-## Events
-
-Event         | Description
----           | ---
-`onsomething` | Triggers when something happens.
 
 ## Development
 
@@ -99,10 +78,6 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## History
-
-For detailed changelog, check [Releases](https://github.com/my-user/my-repo/releases).
 
 ## License
 

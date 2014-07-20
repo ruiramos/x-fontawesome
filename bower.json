@@ -1,9 +1,9 @@
 {
-    "name": "my-repo",
+    "name": "x-fontawesome",
     "version": "0.0.0",
-    "description": "My awesome Custom Element",
+    "description": "Component for using Font Awesome SVG Icons",
     "license": "MIT",
-    "main": "dist/my-element.html",
+    "main": "dist/x-fontawesome.html",
     "keywords": [
         "polymer",
         "web-components"
@@ -14,6 +14,9 @@
         "bower_components"
     ],
     "dependencies": {
-        "polymer": "Polymer/polymer#~0.3.3"
+        "polymer": "Polymer/polymer#~0.3.3",
+        "core-elements": "Polymer/core-elements#master",
+        "core-icon": "Polymer/core-icon#master",
+        "core-iconset-svg": "Polymer/core-iconset-svg#master"
     }
 }
