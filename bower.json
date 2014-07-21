@@ -1,6 +1,6 @@
 {
     "name": "x-fontawesome",
-    "version": "0.0.0",
+    "version": "0.2.0",
     "description": "Component for using Font Awesome SVG Icons",
     "license": "MIT",
     "main": "dist/x-fontawesome.html",
