@@ -15,7 +15,6 @@
     ],
     "dependencies": {
         "polymer": "Polymer/polymer#~0.3.3",
-        "core-elements": "Polymer/core-elements#master",
         "core-icon": "Polymer/core-icon#master",
         "core-iconset-svg": "Polymer/core-iconset-svg#master"
     }

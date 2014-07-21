@@ -1,6 +1,6 @@
 # x-fontawesome
 
-Polymer Web Component that registers Font Awesome SVGs so you can use them easily in your components.
+Polymer Web Component that registers Font Awesome SVGs as a core-iconset-svg so you can use them easily in your components.
 
 
 ## Demo
@@ -12,10 +12,8 @@ Polymer Web Component that registers Font Awesome SVGs so you can use them easil
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install my-repo --save
+$ bower install x-fontawesome --save
 ```
-
-Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 
 ## Usage
 
@@ -28,13 +26,16 @@ Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-repo/dist/my-element.html">
+    <link rel="import" href="bower_components/x-fontawesome/dist/x-fontawesome.html">
     ```
 
 3. Start using it!
 
     ```html
-    <my-element></my-element>
+    <x-fontawesome></x-fontawesome>
+
+    <core-icon icon="fontawesome-icons:fa-smile-o"></core-icon>
+
     ```
 
 ## Development
