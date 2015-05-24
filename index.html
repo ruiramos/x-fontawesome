@@ -2,39 +2,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>x-fontawesome</title>
+    <title>font-awesome</title>
 
-    <!-- Importing Web Component's Polyfill -->
-    <script src="bower_components/platform/platform.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
-    <!-- Importing Custom Elements -->
-    <link rel="import" href="src/x-fontawesome.html">
+    <link rel="import" href="fa-icons.html">
+
+
 </head>
 <body>
 
-  <!-- Using Custom Elements -->
-  <x-fontawesome></x-fontawesome>
+  <h1>Font Awesome Icons à la Polymer</h1>
+  <div>
+    <b>How to use: &lt;iron-icon icon="fa-icons:fa-smile-o"&gt;&lt;/iron-icon&gt;</b>
+  </div>
 
-  <template is="auto-binding">
-    <div class="embiggen">
-      <template repeat="{{icon in icons}}">
-        <core-icon icon="{{icon}}"></core-icon>
-      </template>
+  <hr />
+  <template is="dom-repeat" id="dr">
+    <div>
+      <span>{{item}}</span>
+      <iron-icon icon="{{item}}"></iron-icon>
     </div>
-    <core-meta id="meta" type="iconset"></core-meta>
   </template>
 
-  <p>An icon:</p>
-  <core-icon icon="fontawesome-icons:fa-smile-o"></core-icon>
-
   <script>
-    addEventListener('template-bound', function(e) {
-      var template = e.target;
-      var setName = 'fontawesome-icons';
-      var icons = template.$.meta.byId(setName).iconNames;
-      template.icons = icons.map(function(ic){ console.log(setName + ':' +ic); return setName + ':' +ic });
+
+    window.addEventListener('HTMLImportsLoaded', function(){
+      var link = document.querySelector('link[href="fa-icons.html"]').import;
+      var iconSet = link.querySelector('iron-iconset-svg');
+      icons = JSON.stringify(iconSet.iconNames);
+      document.querySelector('#dr').items = JSON.parse(icons);
+
     });
+
   </script>
+
 
 </body>
 </html>

@@ -1,12 +1,13 @@
 {
     "name": "x-fontawesome",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Component for using Font Awesome SVG Icons",
     "license": "MIT",
-    "main": "dist/x-fontawesome.html",
+    "main": "dist/fa-icons.html",
     "keywords": [
         "polymer",
-        "web-components"
+        "web-components",
+	"font-awesome"
     ],
     "ignore": [
         "**/.*",
@@ -14,8 +15,8 @@
         "bower_components"
     ],
     "dependencies": {
-        "polymer": "Polymer/polymer#~0.3.3",
-        "core-icon": "Polymer/core-icon#master",
-        "core-iconset-svg": "Polymer/core-iconset-svg#master"
+        "polymer": "Polymer/polymer#v0.9",
+        "iron-icon": "PolymerElements/iron-icon#master",
+        "iron-iconset-svg": "PolymerElements/iron-iconset-svg#master"
     }
 }

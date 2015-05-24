@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         },
         'gh-pages': {
             options: {
-                clone: 'bower_components/x-fontawesome'
+                clone: 'bower_components/fa-icons'
             },
             src: [
                 'bower_components/**/*',
-                '!bower_components/x-fontawesome/**/*',
+                '!bower_components/fa-icons/**/*',
                 'demo/*', 'src/*', 'index.html'
             ]
         },

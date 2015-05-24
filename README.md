@@ -26,15 +26,14 @@ $ bower install x-fontawesome --save
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/x-fontawesome/dist/x-fontawesome.html">
+    <link rel="import" href="bower_components/fa-icons/fa-icons.html">
     ```
 
 3. Start using it!
 
     ```html
-    <x-fontawesome></x-fontawesome>
 
-    <core-icon icon="fontawesome-icons:fa-smile-o"></core-icon>
+    <core-icon icon="fa-icons:fa-smile-o"></core-icon>
 
     ```
 
