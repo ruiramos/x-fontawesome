@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             src: [
                 'bower_components/**/*',
                 '!bower_components/fa-icons/**/*',
-                'fa-icons', 'index.html'
+                'fa-icons.html', 'index.html'
             ]
         },
         'replace': {
